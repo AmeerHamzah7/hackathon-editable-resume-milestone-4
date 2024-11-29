@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+    <!-- Complete Resume Template -->
+    <div class="container">
+        <div class="lside">
+            <main class="main">
+                <div class="pp">
+                    <img id="dp" src="#" alt="Profile Picture">
+                </div>
+                <h1 id="fullName">Your Full Name</h1>
+                <p id="designation">Your Designation</p>
+                <div class="sline"></div>
+            </main>
+
+            <div class="contact">
+                <h2>Contact</h2>
+                <div class="contactinfo">
+                    <div class="cnum">
+                        <ion-icon name="call"></ion-icon>
+                        <p id="contactNum">Phone Number</p>
+                    </div>
+                    <div class="email">
+                        <ion-icon name="mail"></ion-icon>
+                        <p id="email">Email Address</p>
+                    </div>
+                    <div class="linkedin">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <p id="llink">LinkedIn Profile</p>
+                    </div>
+                    <div class="addrs">
+                        <ion-icon name="location"></ion-icon>
+                        <p id="addrs">Address</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sline"></div>
+
+            <div class="language">
+                <h2 class="langheading">Languages</h2>
+                <ul class="langlist" id="language"></ul>
+            </div>
+
+            <div class="sline"></div>
+
+            <div class="hobbies">
+                <h2 class="hobheading">Hobbies</h2>
+                <ul class="hoblist" id="hobbies"></ul>
+            </div>
+        </div>
+
+        <div class="rside">
+            <div class="careerOb">
+                <h2>Career Objective</h2>
+                <p id="careerob">Career Objective Content</p>
+            </div>
+
+            <div class="rline"></div>
+
+            <div class="edu">
+                <h2>Education</h2>
+                <div class="eduDetails" id="educationEntries"></div>
+            </div>
+
+            <div class="rline"></div>
+
+            <div class="experience">
+                <h2>Experience</h2>
+                <div class="eduDetails" id="experienceEntries"></div>
+            </div>
+
+            <div class="rline"></div>
+
+            <div class="expertise">
+                <h2>Skills</h2>
+                <ul class="elist" id="skills"></ul>
+            </div>
+
+            <div class="rline"></div>
+
+            <div class="reference">
+                <h2>Reference</h2>
+                <p>To be provided on request.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="action-buttons">
+        <button class="editbtn" type="button" onclick="editResume()">Edit Resume</button>
+    </div>
+
+    <script src="resume.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

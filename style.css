@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 2rem 17rem;
+    font-family: Poppins;
+}
+
+.container{
+    box-shadow: 10px 10px 20px rgb(154, 149, 149);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.lside{
+    background-color: #2C2C2C;
+    width: 35%;
+    padding: 2rem;
+}
+
+.resumeheading{
+    text-align: center;
+    color: black;
+    padding-bottom: 2rem;
+}
+
+.resvg{
+    text-align: center;
+}
+
+.resvg img{
+    width: 5rem;
+}
+
+.formbody{
+    background-color: rgb(2, 2, 95);
+}
+
+/* main */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.pp img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+.main h1{
+    text-transform: uppercase;
+    padding-top: 1.2rem;
+}
+
+.main p{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.sline{
+    background-color: grey;
+    width: 80%;
+    height: 1px;
+    margin: 2rem;
+}
+
+/* Contact section */
+
+.contact{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact h2{
+    text-transform: uppercase;
+}
+
+.cnum, .email, .linkedin, .addrs{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contactinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/* Language n hobbies section */
+.langheading, .hobheading{
+    color: white;
+    text-transform: uppercase;
+}
+
+.langlist, .hoblist{
+    color: white;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+}
+
+/* Right side */
+
+.rline{
+    background-color: grey;
+    width: 80%;
+    height: 1px;
+}
+
+/* Career obj */
+.rside{
+    padding: 3rem 2rem;
+    background-color: white;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.rside h2{
+    text-transform: uppercase;
+}
+
+/* education */
+
+
+.eduMoreDetail{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.eduInstitute{
+    flex-direction: column;
+}
+
+.degree{
+    font-weight: 700;
+}
+
+.elist{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+ul li {
+    margin-bottom: 10px;
+  }
+
+ul li:last-child {
+    margin-bottom: 0;
+  }
+
+@media only screen and (max-width:770px) {
+    body{
+        margin: 0;
+        padding: 2px 4px;
+    }
+
+    .pp img{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+    }
+
+    .container, .rside{
+        flex-direction: column;
+    }
+
+    .lside, .rside{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem;
+        align-content: center;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    p, ul{
+        font-size: 14px;
+    }
+
+    .elist{
+        padding-left: 0;
+        padding-top: 2px;
+    }
+
+    .langlist, .hoblist{
+        padding-left: 0;
+    }
+
+}
+
+@media only screen and (max-width:1286px) {
+    body{
+        margin: 0;
+        padding: 2px 4px;
+    }
+}
+
+/* form updated css */
+/* General Reset and Styling */
+
+/* Form Container Styling */
+.styled-form {
+    background-color: #90d5ff;
+    padding: 2rem;
+    max-width: 50rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset and Legend Styling */
+fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+}
+
+/* Label and Input Styling */
+label {
+    display: block;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="file"],
+input[type="number"],
+textarea {
+    width: 95%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Textarea Specific Styling */
+textarea {
+    min-height: 5rem;
+}
+
+/* Button Styling */
+button {
+    background-color: blue;
+    color: white;
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.action-buttons{
+    padding-top: 1.2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.editbtn{
+    width: 30%;
+}
+
+button:hover {
+    background-color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: rgb(2, 2, 95);
+    color: white;
+    margin-top: 20px;
+}
+
+.love{
+    color: red;
+}
+
+.mylink{
+    color: white;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 740px) {
+    .styled-form {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+

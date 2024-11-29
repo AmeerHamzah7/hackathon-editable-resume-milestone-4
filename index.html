@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body class="formbody">
+
+    <form id="resume-form" class="styled-form" onsubmit="generateResume(); return false;">
+        <div class="resvg">
+            <img src="./assets/resume-svg.svg" alt="">
+        </div>
+        <h1 class="resumeheading">Resume Builder</h1>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullNameInput" required placeholder="Enter your name">
+            <label for="designation">Designation:</label>
+            <input type="text" id="designationInput" required placeholder="Enter your designation">
+            <label for="contactNum">Phone Number:</label>
+            <input type="number" id="contactNumInput" required placeholder="Enter your phone number">
+            <label for="email">Email:</label>
+            <input type="email" id="emailInput" required placeholder="Enter your email">
+            <label for="llink">LinkedIn Profile:</label>
+            <input type="url" id="llinkInput" required placeholder="Enter your LinkedIn URL">
+            <label for="addrs">Address:</label>
+            <textarea id="addrsInput" required placeholder="Enter your address"></textarea>
+            <label for="profilePicInput">Upload Profile Picture:</label>
+            <input type="file" id="profilePicInput" accept="image/*">
+        </fieldset>
+
+        <fieldset>
+            <legend>Career Objective</legend>
+            <label for="careerob">Career Objective:</label>
+            <textarea id="careerobInput" required placeholder="Describe your career objective"></textarea>
+        </fieldset>
+
+        <fieldset id="education-section">
+            <legend>Education</legend>
+            <div class="education-group">
+                <label for="edyear">Education Year:</label>
+                <input type="text" name="educationYear[]" required placeholder="Enter education year">
+                <label for="certification">Certification/Degree:</label>
+                <input type="text" name="certification[]" required placeholder="Enter certification/degree">
+                <label for="school">School/University:</label>
+                <input type="text" name="school[]" required placeholder="Enter school/university">
+            </div>
+            <button type="button" id="add-education-btn">+ Add Education</button>
+        </fieldset>
+
+        <fieldset id="experience-section">
+            <legend>Experience</legend>
+            <div class="experience-group">
+                <label for="exyear">Experience Year:</label>
+                <input type="text" name="experienceYear[]" required placeholder="Enter experience year">
+                <label for="wdesignation">Work Designation:</label>
+                <input type="text" name="workDesignation[]" required placeholder="Enter work designation">
+                <label for="worg">Work Organization:</label>
+                <input type="text" name="workOrganization[]" required placeholder="Enter organization name">
+            </div>
+            <button type="button" id="add-experience-btn">+ Add Experience</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skillsInput" required placeholder="Enter skills">
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="language">Languages (comma-separated):</label>
+            <input type="text" id="languageInput" required placeholder="Enter languages">
+            <label for="hobbies">Hobbies (comma-separated):</label>
+            <input type="text" id="hobbiesInput" required placeholder="Enter hobbies">
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <footer>
+        <p>&copy; Built with <span class="love">&#9829;</span> by <a class="mylink" href="https://www.linkedin.com/in/mrcoder/" target="_blank">Ameer Hamza</a></p>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>
